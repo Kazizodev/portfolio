@@ -1,0 +1,193 @@
+.container .about-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-section .hero-header {
+    background: url(../Assets/nerd1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50vh;
+    flex-grow: 1;
+    color: white;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+    background-color: #2843a34b;
+    height: 100%;
+    width: 100%;
+}
+
+.title2 {
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.line2 {
+    width: 10rem;
+    height: .4rem;
+    background-color: #2843A3;
+    transition: 0.5s ease-in-out;
+}
+
+.text2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+.about-information {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+    .title2 {
+        font-size: 2em;
+    }
+    .text2 {
+        font-size: .7em;
+    }
+    .about-section .hero-header {
+        background: url(../Assets/nerd1.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+    }
+}
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    align-self: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.left {
+    width: 70%;
+    height: 28.063rem;
+    background: url(../Assets/Swing.jpeg) no-repeat center / cover;
+    border-radius: 8px;
+}
+
+.right {
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgba(0, 0, 116, 0.94);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-left: -290px;
+}
+
+.right:nth-last-child() {
+    align-items: center;
+}
+
+.right div {
+    display: flex;
+    flex-direction: column;
+}
+
+.circle {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
+
+.left1 {
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgba(0, 0, 116, 0.94);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-right: -290px;
+    z-index: 2;
+}
+
+.right1 {
+    width: 70%;
+    height: 28.063rem;
+    background: url(../Assets/Trophy.jpeg) no-repeat top;
+    background-position-x: 15%;
+    background-position-y: 30%;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.aboutme {
+    display: flex;
+    width: 100%;
+    height: 10rem;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgba(0, 0, 116, 0.849);
+    color: white;
+    padding: 30px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+@media (max-width: 900px) {
+    .education-container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .right {
+        flex-direction: column;
+        font-size: 0.6em;
+        margin-left: 0;
+        margin-top: -100px;
+    }
+    .right .circle {
+        display: none;
+    }
+    .right p {
+        font-size: 1.4em;
+    }
+    .education-container:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+    .left1 {
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.6em;
+        margin-right: 0;
+        margin-top: -100px;
+    }
+    .left1 .circle {
+        display: none;
+    }
+    .left1 p {
+        font-size: 1.4em;
+    }
+    .right1 {
+        background-size: cover;
+        background-position-x: 35%;
+    }
+}

@@ -1,0 +1,57 @@
+.container .project-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-section .hero-header {
+    background: url(../Assets/laptop.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50vh;
+    flex-grow: 1;
+    color: white;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgba(0, 0, 116, 0.94);
+    width: 23rem;
+    height: 23rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.project-image {
+    background: url(../Assets/playercard.png) no-repeat center / contain;
+    background-color: rgba(0, 0, 116, 0.185);
+    height: 15rem;
+    width: 23rem;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+@media (max-width: 900px) {}
